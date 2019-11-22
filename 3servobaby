@@ -11,6 +11,7 @@
 
 #define servoPin  10
 #define servoPin2  9
+#define servoPin3  11
 #define switchPin 2
 
 #define closePos  10
@@ -18,8 +19,10 @@
 
 Servo servo1;
 Servo servo2;
+Servo servo3;
 int switchState;
 int previousSwitchState;
+
 
 
 // call this when the input on pin 2 changes (LOW to HIGH *or* HIGH to LOW)
@@ -30,12 +33,14 @@ void ToggleSwitch(int switchState)
   {
     servo1.write(openPos);
     servo2.write(openPos);
+    servo3.write(openPos);
     //Serial.println("switch state is HIGH.  servo.write(openPos) called to open useless box");
   }
   else
   {
     servo1.write(closePos);
     servo2.write(closePos);
+    servo3.write(closePos);
     //Serial.println("switch state is LOW.   servo.write(closePos) called to close useless box");
   }
   previousSwitchState = switchState;  // remember that the switch state has changed 
@@ -43,7 +48,7 @@ void ToggleSwitch(int switchState)
 
 void setup()
 {
-  //Serial.begin(9600);
+  Serial.begin(9600);
   //Serial.println("Useless Box Lab 5");
   pinMode(5,OUTPUT);
   digitalWrite(5,HIGH);
@@ -55,8 +60,10 @@ void setup()
 
   servo1.attach(servoPin);
   servo2.attach(servoPin2);
+  servo3.attach(servoPin3);
   servo1.write(closePos);
   servo2.write(closePos);
+  servo3.write(closePos);
   
 
   // we should probably pay attention to the switch
@@ -65,9 +72,28 @@ void setup()
 
 void loop()
 { 
-  int switchState = digitalRead(switchPin);
+  // switchState = digitalRead(switchPin);
+    //Serial.println(digitalRead(switchPin));
   if (switchState != previousSwitchState)
     ToggleSwitch(switchState);
 
   delay(20);
+  
+ if (Serial.available() > 0) {
+    // get incoming byte:
+    int inByte = Serial.read();
+    Serial.println("you've got mail, baby");
+    Serial.println(inByte);
+
+    if (inByte == 49) {
+      Serial.println("poopy");
+       switchState = 1;
+    }
+    
+    if (inByte == 48) {
+      Serial.println("spoopy");
+       switchState = 0;
+    }
+  }
+
 }
