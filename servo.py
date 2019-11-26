@@ -1,3 +1,12 @@
+#Steps for running this code
+# 1. Clone this code onto local machine
+#2. In Terminal, run: 
+#   scp servo.py pi@[Your IP Address]:/home/pi #This moves the code from your computer onto the Pi
+#3. mkdir "Final Project"
+#scp servo.py your_username@remotehost.edu:/home/pi/Final \Project/
+#python servo.py
+
+
 
 import cv2
 
