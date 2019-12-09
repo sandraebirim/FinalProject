@@ -1,4 +1,4 @@
-# Collapsing Blocks - IDD Final Project
+# Blocks That Turn 'Round - IDD Final Project
 
 # Team:
 
@@ -13,3 +13,7 @@ Sandra Ebirim
 
 Our idea is to create a set of blocks, that exists in a certain formation. When the blocks detect a face, using a camera and computer vision, the blocks will then change formation or collapse. After a certain amount of time following the self destruction, the blocks will reconstruct themselves back to the original formation. 
 
+
+
+
+[# Iteration 1](https://github.com/ziggydale45/final_project)
