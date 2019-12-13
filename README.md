@@ -11,9 +11,11 @@ Sandra Ebirim
 
 # Idea: 
 
-Our idea is to create a set of blocks, that exists in a certain formation. When the blocks detect a face, using a camera and computer vision, the blocks will then change formation or collapse. After a certain amount of time following the self destruction, the blocks will reconstruct themselves back to the original formation. 
+We mounted two servos on a box cardboard box and glued a small box with a face onto each servo. Another less wide cardboard box sits above the box with servos and is attached to a string wound around a stepper motor that is screweed onto a third cardboard box that contains the two smaller boxes.   
 
 
 
 
 [# Iteration 1](https://github.com/ziggydale45/final_project)
+
+![Final Version](https://github.com/sandraebirim/FinalProject/blob/master/FinalPrototype.png)  
