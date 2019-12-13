@@ -1,0 +1,2 @@
+Design point of view: This interactive device is designed to be a toy for people to play with. When a person walks by the toy, a camera senses their motion and triggers a stepper motor to turn. The stepper motor is connected to a string tied to a box, and this causes the box to lift up. Once the box lifts up, it reveals two smaller boxes that turn to look at you. 
+After a few seconds the boxes turn away and the box attached to the string goes back down. 
