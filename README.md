@@ -58,6 +58,8 @@ Attach a stepper motor to the top of Box 3 and place the string connected to Box
 
 Connect the Servo Driver and camera to the Raspberry Pi. Connect both Servos to the Servo Driver. Power one Arduino with a power cord connected to an outlet and the other Arduino with the Raspberry Pi. Connect the Arduino powered by the Raspberry Pi to the Stepper Motor Driver and connect the Stepper Motor Driver to the Stepper Motor. 
 
+!(How it's all connected)[https://github.com/sandraebirim/FinalProject/blob/master/Connected%20Parts.JPG]
+
 
 
 
