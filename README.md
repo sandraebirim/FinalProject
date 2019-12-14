@@ -33,7 +33,7 @@ The camera is connected to the Raspberry Pi and is running an adapted version Mo
 
 Wires 
 
-2 USB Power Cords 
+2 microUSB Power Cords 
 
 # Programming: 
 
@@ -44,6 +44,9 @@ Upload the [Arduino code](https://github.com/sandraebirim/FinalProject/blob/mast
 Connect the USB camera into the USB port on the raspberry pi. The stepper motor driver will be plugged into pins 8,9,10, and 11 of the Arduino that is connected directly to the raspberry pi. The stepper motor driver will get power from the secondary Arduino.
 
 The servo driver will be connected entirely to the Raspberry pi with standard connections, which can be found [here](https://learn.adafruit.com/assets/69564) with the addition of connecting V+ to one of the raspberry pi 3V or 5V pins. 
+
+A picture of the connected system can be found [here](https://github.com/sandraebirim/FinalProject/blob/master/Connected%20Parts.JPG).
+
 
 # Assembly: 
 Box 1: Laser cut a box that is 3 inches tall, 5 inches deep, and 6.5 inches wide. One one 5 in x 6.5 in side, laser cut two rectangles the size of servo motors out of the box and one rectangle that is 1.5 cm x 5 cm so that the long side of the cut out rectangle is parallel to the long side of the box. This will be a space for wires to feed through. Assemble all sides of the box (joining with hot glue) excluding the bottom (opposite the side with the servos) and the back. Put servos into holes cut out for them. Attach servos to servo driver, which is powered by the Raspberry Pi. 
@@ -59,6 +62,18 @@ Attach a stepper motor to the top of Box 3 and place the string connected to Box
 Connect the Servo Driver and camera to the Raspberry Pi. Connect both Servos to the Servo Driver. Power one Arduino with a power cord connected to an outlet and the other Arduino with the Raspberry Pi. Connect the Arduino powered by the Raspberry Pi to the Stepper Motor Driver and connect the Stepper Motor Driver to the Stepper Motor. 
 
 ![How it's all connected](https://github.com/sandraebirim/FinalProject/blob/master/Connected%20Parts.JPG)
+
+# Sources: 
+
+[Streaming Video from Raspberry Pi](https://www.pyimagesearch.com/2019/09/02/opencv-stream-video-to-web-browser-html-page/)
+
+[Object Tracking with Camera](https://www.pyimagesearch.com/2018/07/23/simple-object-tracking-with-opencv/)
+
+[Motion Detection with Camera](https://www.pyimagesearch.com/2015/05/25/basic-motion-detection-and-tracking-with-python-and-opencv/)
+
+[Structure Inspiration](https://github.com/Ivan1931/Arduino-Elevator) 
+
+
 
 
 
