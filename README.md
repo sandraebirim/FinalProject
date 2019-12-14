@@ -13,7 +13,9 @@ Sandra Ebirim
 
 We mounted two servos on a box cardboard box (Box 1) and glued a small box with a face onto each servo. Another less wide cardboard box (Box 2) sits above the box with servos and is attached to a string wound around a stepper motor that is screwed onto a third cardboard box (Box 3) that contains the two smaller boxes. The string should start out unwound so that the boxes with faces are covered.   
 
-The camera is connected to the Raspberry Pi and is running an adapted version Motion, which signals the stepper motor, which is powered by an Arduino, to turn when motion is detected. The stepper motor is attached to a string tied to a box, making the box lift up. This reveals two smaller boxes with faces. Once the two smaller boxes are revealed, if motion is detected again, the faces will turn.  
+The camera is connected to the Raspberry Pi and is running a motion detecting code, which signals the stepper motor, which is powered by an Arduino, to turn when motion is detected. The stepper motor is attached to a string tied to a box, making the box lift up. This reveals two smaller boxes with faces. Once the two smaller boxes are revealed, if motion is detected again, the faces will turn to the appropriate angle, essentially tracking the motion of an individual in the field of the camera.  
+
+[Paper Prototype](https://github.com/ziggydale45/final_project)
 
 ![Final Version](https://github.com/sandraebirim/FinalProject/blob/master/FinalPrototype.png)  
 
